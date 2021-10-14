@@ -14,8 +14,7 @@ const { isAuth } = require("./auth");
 const { verify } = require("jsonwebtoken");
 const app = express();
 
-const url =
-  "mongodb+srv://deepak:mongodb797@cluster0.urwx4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+
 
 mongoose.connect(process.env.MONGO_DB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
